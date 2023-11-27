@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Pengguna</title>
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- swiper link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- custom ccs file link -->
+    <link rel="stylesheet" href="../profil_pengguna/profil_pengguna.css" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ICONS -->
+    <script
+      src="https://kit.fontawesome.com/e8b5a157ee.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <div class="container-fluid py-2 py-sm-1 bg-black text-white text-center">
+      <div class="row px-sm-0 px-5">
+        <div class="col-12 col-sm-4 col-md-4 col-lg-3">
+          <h3 class="text-lg-start text-md-start">Profil Pengguna</h3>
+        </div>
+        <!-- icon bar -->
+        <div
+          class="text-lg-end pt-2 pb-2 text-md-end text-sm-end col-12 col-sm-7 col-md-7 col-lg-8"
+        >
+          <button class="btn btn-light btn-sm me-lg-2 me-4">
+            <a href="../Notifikasi/Notifikasi.html"
+              ><i class="fa-regular fa-bell" style="color: #000000"></i
+            ></a>
+          </button>
+          <button class="btn btn-light btn-sm">
+            <a href="../index.html">
+              <i class="fa-solid fa-house" style="color: #000000"></i
+            ></a>
+          </button>
+        </div>
+        <!-- icon bar -->
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Backgroud Image Start -->
+    <div class="background-image"></div>
+    <!-- Backgroud Image End -->
+    <!-- Header End -->
+
+    <!-- Section Start -->
+    <div class="container-fluid p-3 mt-5">
+      <div class="row">
+        <div class="col-lg-3 col-sm-12 col-md-12 col-12 text-center mt-sm-5">
+          <img
+            id="gambar1"
+            src="../IMG/InShot_20231123_200420330.jpg"
+            class="rounded-circle"
+            alt=""
+          />
+        </div>
+        <div
+          class="col-lg-9 col-md-12 col-sm-12 col-12 text-center mt-3 mt-sm-1 mt-lg-5"
+        >
+          <div class="row">
+            <table id="tablee">
+              <tbody>
+                <tr>
+                  <td class="align-bottom">
+                    <div class="container-fluid text-center">
+                      <div class="row">
+                        <div class="col-4 mt-md-5">
+                          <div class="col-12">
+                            <h3 id="tulisan1">Nama User</h3>
+                          </div>
+                          <div class="col-12">
+                            <p id="tulisan2">
+                              <i
+                                class="fa-solid fa-user-group"
+                                style="color: #000000"
+                              ></i>
+                              5 friends
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-4 mt-md-5">
+                          <div class="col-12">
+                            <p>
+                              <i
+                                class="fa-solid fa-address-card"
+                                style="color: #000000"
+                              ></i>
+                              Informasi Pribadi
+                            </p>
+                          </div>
+                          <div class="col-12">
+                            <p>
+                              <i
+                                class="fa-solid fa-barcode"
+                                style="color: #000000"
+                              ></i>
+                              123456789
+                            </p>
+                          </div>
+                          <div class="col-12">
+                            <p>
+                              <i
+                                class="fa-solid fa-head-side-virus"
+                                style="color: #000000"
+                              ></i>
+                              NIK
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-4 mt-md-5">
+                          <div class="col-12">
+                            <p>
+                              <a class="link-opacity-75-hover" href="#"
+                                >Ubah kata sandi</a
+                              >
+                            </p>
+                          </div>
+                          <div class="col-12">
+                            <p>
+                              <i
+                                class="fa-solid fa-address-book"
+                                style="color: #000000"
+                              ></i>
+                              +628xxxxxxxx
+                            </p>
+                          </div>
+                          <div class="col-12">
+                            <p id="email">
+                              <i
+                                class="fa-solid fa-envelope"
+                                style="color: #000000"
+                              ></i>
+                              michael@jordan.com
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section End -->
+
+    <!-- Bagian Teman Start -->
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-6 text-start p-2">
+          <div class="container-fluid">
+            <div class="row">
+              <div
+                class="col-lg-6 col-md-6 col-sm-5 col-12 text-lg-end text-center"
+              >
+                <h3 id="tulisan1">Teman Anda</h3>
+              </div>
+              <div
+                class="col-lg-6 col-md-6 col-sm-7 col-12 text-lg-start text-center"
+              >
+                <a href="../Pertemanan/Pertemanan.html">
+                  <button id="buttomm" type="button" class="btn btn-secondary">
+                    Lihat daftar teman
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <p>
+            <i class="fa-solid fa-location-dot" style="color: #000000"></i>
+            Jalan Veteran
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Bagian Teman End -->
+
+    <!-- Daftar teman start -->
+    <div class="container-fluid text-center">
+      <div class="row border">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 col-xl-3">
+          <div class="col-12">
+            <img
+              src="../image/Get the We Heart It app!.jpeg"
+              class="img-thumbnail mt-lg-4 mb-lg-4 border-0 image-notifikasi"
+              alt=""
+            />
+            <h3 id="nama">Lucas Candra</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 col-xl-3">
+          <div class="col-12">
+            <img
+              src="../image/Get the We Heart It app!.jpeg"
+              class="img-thumbnail mt-lg-4 mb-lg-4 border-0 image-notifikasi"
+              alt=""
+            />
+            <h3 id="nama">Arvan Yudhistira</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 col-xl-3">
+          <div class="col-12">
+            <img
+              src="../image/Get the We Heart It app!.jpeg"
+              class="img-thumbnail mt-lg-4 mb-lg-4 border-0 image-notifikasi"
+              alt=""
+            />
+            <h3 id="nama">Zidan Rafi</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 col-xl-3">
+          <div class="col-12">
+            <img
+              src="../image/Get the We Heart It app!.jpeg"
+              class="img-thumbnail mt-lg-4 mb-lg-4 border-0 image-notifikasi"
+              alt=""
+            />
+            <h3 id="nama">Ahman Fauzan</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 col-xl-3">
+          <div class="col-12">
+            <img
+              src="../image/Get the We Heart It app!.jpeg"
+              class="img-thumbnail mt-lg-4 mb-lg-4 border-0 image-notifikasi"
+              alt=""
+            />
+            <h3 id="nama">Farhan Rahmansyah</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Daftar teman end -->
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+  </body>
+</html>

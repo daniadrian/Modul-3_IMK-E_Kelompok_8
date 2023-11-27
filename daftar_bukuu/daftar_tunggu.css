@@ -1,0 +1,61 @@
+body {
+  font-size: 16px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.icon-header {
+  max-height: 7rem;
+}
+
+
+
+.line {
+  border: solid 2px black;
+}
+
+.list-notifikasi {
+  height: 71vh;
+}
+
+.notifikasi {
+  max-height: 8rem;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+
+  .icon-header {
+    max-height: 6.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 570px) {
+  p {
+    font-size: 0.8rem;
+  }
+
+  .icon-header {
+    max-height: 6rem;
+  }
+}
+
+@media (min-height: 1100px) {
+  .list-notifikasi {
+    height: 70vh;
+  }
+
+  .icon-header {
+    max-height: 6.5rem;
+  }
+}

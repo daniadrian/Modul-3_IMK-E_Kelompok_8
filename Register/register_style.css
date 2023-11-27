@@ -1,0 +1,92 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(218, 224, 228);
+  font-size: 16px; /* Default font-size dalam rem */
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../image/ryunosuke-kikuno-FKqxZ58bVjU-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 100rem;
+  }
+  p {
+    font-size: 100rem;
+  }
+  #a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  #a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 0.9rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  #a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 575px) {
+  html {
+    font-size: 0.8rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  #a {
+    font-size: 1rem;
+  }
+  .form-check-label {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 0.5rem;
+  }
+  .form-check-label {
+    font-size: 1.4rem;
+  }
+  #h4 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  #a {
+    font-size: 1.5rem;
+  }
+}
+span {
+  color: blue;
+  border-bottom: 1px solid blue;
+}

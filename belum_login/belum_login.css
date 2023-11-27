@@ -1,0 +1,85 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  font-size: 20px;
+}
+.icon-header {
+  max-height: 7rem;
+}
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background-image: url(../IMG/Leeds+Library+-+new.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#bufav {
+  font-size: 3rem;
+}
+
+#buku-favorit {
+  font-size: 2.5rem;
+}
+
+#judul {
+  font-size: 2rem;
+}
+#ket {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 0.9rem;
+  }
+  .icon-header {
+    max-height: 6.5rem;
+  }
+  .background-image {
+    height: 27%;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 1rem;
+  }
+  .icon-header {
+    max-height: 6.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 0.8rem;
+  }
+  .icon-header {
+    max-height: 6rem;
+  }
+  #logo {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 0.6rem;
+  }
+    .background-image {
+    height: 18%;
+  }
+}

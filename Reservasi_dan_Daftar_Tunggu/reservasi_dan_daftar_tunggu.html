@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- font awesome link -->
+
+    <!-- swiper link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- swiper link -->
+
+    <!-- ICONS -->
+    <script
+      src="https://kit.fontawesome.com/e8b5a157ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ICONS -->
+
+    <!-- Icon Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- Icon Bootstrap -->
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS -->
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="../Reservasi_dan_Daftar_Tunggu/reservasi_dan_daftar_tunggu.css"
+    />
+    <!-- CSS -->
+
+    <title>Daftar Tunggu & Reservasi</title>
+  </head>
+
+  <body>
+    <!-- Header Start -->
+    <div class="container-fluid py-2 py-sm-1 bg-black text-white text-center">
+      <div class="row px-sm-0 px-5">
+        <div class="col-6 col-sm-2 col-md-2 col-lg-1 text-end pe-1 pe-lg-0">
+          <img
+            src="..\image\an-icon-for-library_SBa9Q7Aq_upscaled-removebg-preview.png"
+            class="icon-header border rounded-circle border-white"
+          />
+        </div>
+
+        <div
+          class="col-6 col-sm-3 col-md-3 col-lg-8 ps-1 ms-sm-4 ps-md-3 ps-lg-1 ps-xl-4"
+        >
+          <h3 class="text-start">Perpustakaan</h3>
+          <h3 class="text-start">Kota</h3>
+          <h3 class="text-start">Malang</h3>
+        </div>
+
+        <!-- icon bar -->
+        <div class="col-12 col-sm-2 col-md-2 col-lg-2 pt-sm-5 p-2">
+          <button class="btn btn-light btn-sm me-lg-2">
+            <a href="../Notifikasi/Notifikasi.html"
+              ><i class="fa-regular fa-bell" style="color: #000000"></i
+            ></a>
+          </button>
+          <button class="btn btn-light btn-sm">
+            <a href="../index.html">
+              <i class="fa-solid fa-house" style="color: #000000"></i
+            ></a>
+          </button>
+        </div>
+        <!-- icon bar -->
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Judul body Start -->
+    <div class="container text-center">
+      <div class="row mt-3">
+        <div class="col-6 d-flex justify-content-start align-items-center">
+          <h2>
+            <i
+              class="fa-solid fa-list me-2 ms-2 bg-black"
+              style="color: #ffffff"
+            ></i>
+            Daftar Tunggu & Reservasi
+          </h2>
+        </div>
+        <div class="col-6 d-flex justify-content-end align-items-center">
+          <h2>
+            <i class="fa-solid fa-basket-shopping" style="color: #000000"></i>
+            <a
+              class="link-opacity-50-hover"
+              data-bs-toggle="modal"
+              data-bs-target="#keranjang"
+              href="#"
+              >Lihat Keranjang</a
+            >
+          </h2>
+        </div>
+      </div>
+    </div>
+    <!-- Judul body End -->
+
+    <!-- Body Start -->
+    <div class="list-notifikasi">
+      <div class="container-md text-center">
+        <div class="row mt-5">
+          <div id="reservasi" class="col-6">
+            <div class="container text-center">
+              <div class="row">
+                <div
+                  class="col-lg-6 col-md-4 col-sm-12 col-12 text-center text-sm-center text-md-start text-lg-start"
+                >
+                  <h3 id="a">
+                    <i
+                      class="fa-solid fa-user-check"
+                      style="color: #000000"
+                    ></i>
+                    Reservasi
+                  </h3>
+                </div>
+                <div
+                  class="hapusreservasi col-lg-6 col-md-8 col-sm-12 col-12 text-center text-sm-center text-md-end text-lg-end"
+                >
+                  <button id="b" type="button" class="btn btn-primary">
+                    Hapus Reservasi
+                  </button>
+                </div>
+                <div
+                  id="c2"
+                  class="col-lg-6 col-md-8 col-sm-12 col-12 text-center text-sm-center text-md-end text-lg-end"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal_reservasi"
+                  >
+                    Konfirmasi
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="mt-2 container-md text-black text-end overflow-y-scroll h-100 border border-black border-2"
+            >
+              <div class="row pb-2 mx-2 pt-2"></div>
+
+              <div class="row border mb-2 mx-1"></div>
+
+              <div class="row pb-2 mx-2">
+                <div class="col-lg-12 col-12 border border-black">
+                  <div class="container text-center">
+                    <div class="row">
+                      <div class="col-lg-4 mx-lg-auto mt-lg-5 pt-lg-3">
+                        <h5 class="text-center">Python For Machine Learning</h5>
+                        <div id="check_reservasi" class="row">
+                          <div class="col-12 text-center">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              Pilih buku
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-7">
+                        <img
+                          src="../image/Python_For_Machine_Learning_Edisi_Revisi.jpg"
+                          class="img-thumbnail mt-lg-4 mb-lg-4 border-0 image-notifikasi"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pb-2 mx-2">
+                <div class="col-lg-12 col-12 border border-black">
+                  <div class="container text-center">
+                    <div class="row">
+                      <div class="col-lg-4 mx-lg-auto mt-lg-5 pt-lg-3">
+                        <h5 class="text-center">Black Clover 04</h5>
+                        <div id="check_reservasi" class="row">
+                          <div class="col-12 text-center">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              Pilih buku
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-7">
+                        <img
+                          src="../image/black-clover-04.jpg"
+                          class="img-thumbnail mt-lg-4 mb-lg-4 border-0 image-notifikasi"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pb-2 mx-2">
+                <div class="col-lg-12 col-12 border border-black">
+                  <div class="container text-center">
+                    <div class="row">
+                      <div class="col-lg-4 mx-lg-auto mt-lg-5 pt-lg-3">
+                        <h5 class="text-center">Kitab Full Stack</h5>
+                        <div id="check_reservasi" class="row">
+                          <div class="col-12 text-center">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              Pilih buku
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-7">
+                        <img
+                          src="../image/fullstack.png"
+                          class="img-thumbnail mt-lg-4 mb-lg-4 border-0 image-notifikasi"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="daftar-tunggu" class="col-6">
+            <div class="container text-center">
+              <div class="row">
+                <div
+                  class="col-lg-6 col-12 col-md-5 col-sm-12 text-center text-sm-center text-md-start text-lg-start"
+                >
+                  <h3 id="a">
+                    <i
+                      class="fa-solid fa-user-clock"
+                      style="color: #000000"
+                    ></i>
+                    Daftar Tunggu
+                  </h3>
+                </div>
+                <div
+                  class="hapusdaftartunggu col-lg-6 col-12 col-md-7 col-sm-12 text-center text-sm-center text-md-end text-lg-end"
+                >
+                  <button id="b" type="button" class="btn btn-primary">
+                    Hapus Daftar Tunggu
+                  </button>
+                </div>
+                <div
+                  id="c1"
+                  class="col-lg-6 col-12 col-md-7 col-sm-12 text-center text-sm-center text-md-end text-lg-end"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal_daftar_tunggu"
+                  >
+                    Konfirmasi
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="mt-2 container-md text-black text-end overflow-y-scroll h-100 border border-black border-2"
+            >
+              <div class="row pb-2 mx-2 pt-2"></div>
+
+              <div class="row border mb-2 mx-1"></div>
+
+              <div class="row pb-2 mx-2">
+                <div class="col-lg-12 col-12 border border-black">
+                  <div class="container text-center">
+                    <div class="row">
+                      <div class="col-lg-4 mx-lg-auto mt-lg-5 pt-lg-3">
+                        <h5 class="text-center">Dilan 1990</h5>
+                        <div id="check_daftar_tunggu" class="row">
+                          <div class="col-12 text-center">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              Pilih buku
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-7">
+                        <img
+                          src="../image/dilan.jpg"
+                          class="img-thumbnail mt-lg-4 mb-lg-4 border-0 image-notifikasi"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row pb-2 mx-2">
+                <div class="col-lg-12 col-12 border border-black">
+                  <div class="container text-center">
+                    <div class="row">
+                      <div class="col-lg-4 mx-lg-auto mt-lg-5 pt-lg-3">
+                        <h5 class="text-center">Fisika</h5>
+                        <div id="check_daftar_tunggu" class="row">
+                          <div class="col-12 text-center">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              Pilih buku
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-7">
+                        <img
+                          src="../image/fisika.jpg"
+                          class="img-thumbnail mt-lg-4 mb-lg-4 border-0 image-notifikasi"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pb-2 mx-2">
+                <div class="col-lg-12 col-12 border border-black">
+                  <div class="container text-center">
+                    <div class="row">
+                      <div class="col-lg-4 mx-lg-auto mt-lg-5 pt-lg-3">
+                        <h5 class="text-center">Half-Minute Horrors</h5>
+                        <div id="check_daftar_tunggu" class="row">
+                          <div class="col-12 text-center">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              Pilih buku
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-7">
+                        <img
+                          src="../image/ID_HCO2015MTH06HHOR_B.jpg"
+                          class="img-thumbnail mt-lg-4 mb-lg-4 border-0 image-notifikasi"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Body End -->
+
+    <!-- modal konfirmasi reservasi start -->
+    <div
+      class="modal fade"
+      id="modal_reservasi"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 text-center">
+                <h4>Konfirmasi Hapus Reservasi</h4>
+              </div>
+              <div class="col-12 text-center">
+                <p id="p">Anda yakin ingin menghapus reservasi buku berikut:</p>
+              </div>
+              <div
+                class="col-12 text-start overflow-auto border border-black border-1 justify-content-center mx-auto"
+                style="height: 30vh; max-width: 25rem"
+              >
+                <p id="p">- Python For Machine Learning</p>
+                <p id="p">- Black Clover 04</p>
+                <p id="p">- Kitab Full Stack</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary col-12">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal konfirmasi reservasi end -->
+
+    <!-- modal konfirmasi daftar tunggu start -->
+    <div
+      class="modal fade"
+      id="modal_daftar_tunggu"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 text-center">
+                <h4>Konfirmasi Hapus Daftar Tunggu</h4>
+              </div>
+              <div class="col-12 text-center">
+                <p id="p">
+                  Anda yakin ingin menghapus daftar tunggu buku berikut:
+                </p>
+              </div>
+              <div
+                class="col-12 text-start overflow-auto border border-black border-1 justify-content-center mx-auto"
+                style="height: 30vh; max-width: 25rem"
+              >
+                <p id="p">- Dilan 1990</p>
+                <p id="p">- Fisika</p>
+                <p id="p">- Half-Minute Horrors</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary col-12">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal konfirmasi daftar tunggu end -->
+
+    <!-- modal keranjang start -->
+    <div
+      class="modal fade"
+      id="keranjang"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid text-center">
+              <div class="row">
+                <div
+                  class="col-12 text-start overflow-x-scroll border border-black border-1 justify-content-center mx-auto"
+                  style="height: 25vh; max-width: 30rem"
+                >
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="row m-1">
+                        <div class="col-lg-7">
+                          <img
+                            src="../image/utbk.jpg"
+                            alt=""
+                            class="img-thumbnail"
+                          />
+                        </div>
+                        <div class="col-lg-5" style="font-size: 0.8rem">
+                          <div
+                            class="col-12 border border-black mb-1 text-center"
+                          >
+                            Kisi-Kisi UTBK SBMPTN Soshum 2020
+                          </div>
+                          <div
+                            class="col-12 border border-black mt-1 text-center"
+                          >
+                            -
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="row m-1">
+                        <div class="col-lg-7">
+                          <img
+                            src="../image/doraemon.jpg"
+                            alt=""
+                            class="img-thumbnail"
+                          />
+                        </div>
+                        <div class="col-lg-5" style="font-size: 0.5rem">
+                          <div
+                            class="col-12 border border-black mb-1 text-center"
+                          >
+                            Doraemon
+                          </div>
+                          <div
+                            class="col-12 border border-black mt-1 text-center"
+                          >
+                            Comedy
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid mt-5 text-center">
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-6"><p id="p">Tanggal pengembalian</p></div>
+                    <div class="col-5">
+                      <input type="date" value="2023-10-20" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <p id="p">Tanggal pengembalian maksimal</p>
+                </div>
+                <div class="col-12"><p id="p">10/21/2023</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Reservasi</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal keranjang end -->
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+
+    <!-- Javascript -->
+    <script src="../Reservasi_dan_Daftar_Tunggu/reservasi_dan_daftar_tunggu.js"></script>
+    <!-- Javascript -->
+  </body>
+</html>

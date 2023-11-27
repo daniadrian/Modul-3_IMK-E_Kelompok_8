@@ -1,0 +1,302 @@
+body {
+  font-size: 16px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.bottom-button {
+  padding-top: 6rem;
+}
+
+.icon-header {
+  max-height: 7rem;
+}
+
+.image-notifikasi {
+  max-height: 10rem;
+}
+
+.line {
+  border: solid 2px black;
+}
+
+.list-notifikasi {
+  height: 55vh;
+}
+
+.list-pertemanan {
+  height: 66vh;
+}
+
+.add-friend-container {
+  height: 60vh;
+}
+
+.list-teman {
+  border-top: solid 2px black;
+  border-left: solid 2px black;
+  border-right: solid 2px black;
+}
+
+.daftar-teman {
+  border-bottom: solid 2px black;
+  border-left: solid 2px black;
+  border-right: solid 2px black;
+}
+
+.deskripsi-teman {
+  max-height: 7rem;
+}
+
+.buku-favorit {
+  height: 3.8rem;
+}
+
+.buku-favorit p {
+  font-size: 0.8rem;
+}
+
+.notifikasi {
+  max-height: 8rem;
+}
+
+.chat {
+  --rad: 20px;
+  --rad-sm: 3px;
+  font: 16px/1.5 sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.one-liner {
+  width: 100%;
+  display: inline-flex;
+  margin: auto;
+}
+
+.image-chat {
+  max-height: 3rem;
+  max-width: 3rem;
+  margin-left: 0.2rem;
+}
+
+.image-chat.rec {
+  max-height: 3rem;
+  max-width: 3rem;
+  margin-right: 0.2rem;
+}
+
+.msg {
+  position: relative;
+  max-width: 75%;
+  padding: 7px 15px;
+  margin-bottom: 2px;
+}
+
+.msg.sent {
+  border-radius: var(--rad) var(--rad-sm) var(--rad-sm) var(--rad);
+  background: #42a5f5;
+  color: #fff;
+  /* moves it to the right */
+  margin-left: auto;
+}
+
+.msg.rcvd {
+  border-radius: var(--rad-sm) var(--rad) var(--rad) var(--rad-sm);
+  background: #f1f1f1;
+  color: #555;
+  /* moves it to the left */
+  margin-right: auto;
+}
+
+/* Followup */
+.msg.rcvd.sec,
+.one-liner + .msg.rcvd {
+  margin-left: 3.4rem;
+}
+
+.msg.sent.sec,
+.one-liner + .msg.sent {
+  margin-right: 3.2rem;
+}
+
+/* Improve radius for messages group */
+
+.msg.sent:first-child,
+.msg.rcvd + .msg.sent {
+  border-top-right-radius: var(--rad);
+}
+
+.msg.rcvd:first-child,
+.image-chat + .msg.rcvd {
+  border-top-left-radius: var(--rad);
+}
+
+/* Show time only for first message in group */
+
+.msg:first-child::before,
+.msg.sent + .msg.rcvd::before,
+.msg.rcvd + .msg.sent::before {
+  /* Show only for first message in group */
+  display: block;
+}
+
+/* Dukungan */
+.dukungan-text {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.list-faq {
+  height: 45vh;
+}
+
+.list-faq p {
+  text-align: justify;
+}
+
+/*History*/
+#history-icon {
+  font-size: 2.5rem;
+}
+
+.image-history {
+  height: 20vw;
+  min-height: 15rem;
+}
+
+.history-date {
+  width: 10vw;
+  margin-left: 8vw;
+  padding: 0 0.5rem;
+}
+
+.history-desc {
+  font-size: 1rem;
+}
+
+@media (max-width: 1200px) {
+  p {
+    font-size: 1rem;
+  }
+
+  .history-date {
+    font-size: 0.8rem;
+  }
+
+  .history-modal-font {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 0.8rem;
+  }
+
+  .add-desc h5 {
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .kirim-button {
+    font-size: 0.5rem;
+  }
+
+  .kirim-button button {
+    font-size: 0.5rem;
+  }
+
+  .msg.sent:first-child,
+  .msg.rcvd + .msg.sent {
+    margin-top: 5px;
+  }
+
+  .msg.rcvd:first-child,
+  .image-chat + .msg.rcvd {
+    margin-top: 5px;
+  }
+
+  .image-chat {
+    margin-top: 5px;
+  }
+
+  .icon-header {
+    max-height: 6.5rem;
+  }
+
+  .bottom-button {
+    padding-top: 0rem;
+  }
+
+  .history-date {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 570px) {
+  p {
+    font-size: 0.5rem;
+  }
+
+  .dukungan-text {
+    font-size: 0.8rem;
+  }
+
+  .add-desc h5 {
+    font-size: 0.5rem;
+  }
+
+  .msg {
+    font-size: 0.8rem;
+    padding: 7px 7px;
+  }
+
+  .buku-favorit p {
+    font-size: 0.5rem;
+  }
+
+  .icon-header {
+    max-height: 6rem;
+  }
+
+  .image-notifikasi {
+    max-height: 6rem;
+  }
+
+  .history-date {
+    width: 30vw;
+  }
+}
+
+@media (max-height: 1150px) {
+  .kirim-button {
+    font-size: 0.8rem;
+  }
+
+  .kirim-button button {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-height: 1130px) {
+  .list-notifikasi {
+    height: 70vh;
+  }
+
+  .icon-header {
+    max-height: 6.5rem;
+  }
+}
+
+@media (max-height: 700px) {
+  .list-faq {
+    height: 30vh;
+  }
+}

@@ -1,0 +1,130 @@
+body {
+  font-size: 16px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.icon-header {
+  max-height: 7rem;
+}
+.tulisan_pilih_buku {
+  font-size: 1rem;
+}
+#reservasi {
+  height: 54vh;
+}
+#daftar-tunggu {
+  height: 54vh;
+}
+
+.image-notifikasi {
+  max-height: 20rem;
+}
+
+.line {
+  border: solid 2px black;
+}
+
+.hilang {
+  display: none;
+}
+
+.muncul {
+  display: inline;
+}
+
+.modal-body {
+  height: 50vh;
+}
+
+.muncul-check {
+  display: flex;
+}
+
+.list-notifikasi {
+  height: 55vh;
+}
+
+.notifikasi {
+  max-height: 8rem;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 0.8rem;
+  }
+  #p {
+    font-size: 1.2rem;
+  }
+
+  .icon-header {
+    max-height: 6.5rem;
+  }
+  #a {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  p {
+    font-size: 1rem;
+  }
+  #p {
+    font-size: 1.2rem;
+  }
+  #a {
+    font-size: 1rem;
+  }
+  #b {
+    font-size: 0.9rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 570px) {
+  p {
+    font-size: 0.5rem;
+  }
+  #p {
+    font-size: 1.2rem;
+  }
+  .icon-header {
+    max-height: 6rem;
+  }
+
+  .image-notifikasi {
+    max-height: 7rem;
+  }
+  #a {
+    font-size: 0.7rem;
+  }
+  #b {
+    font-size: 0.7rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .tulisan_pilih_buku {
+    font-size: 0.8rem;
+  }
+  #flexCheckDefault {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-height: 1100px) {
+  .list-notifikasi {
+    height: 70vh;
+  }
+
+  .icon-header {
+    max-height: 6.5rem;
+  }
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Feater Icon & Icon Bootstrap -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- Feater Icon & Icon Bootstrap -->
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href=".//style.css" />
+    <!-- CSS -->
+
+    <!-- ICONS -->
+    <script
+      src="https://kit.fontawesome.com/e8b5a157ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ICONS -->
+
+    <title>Perpustakaan Kota Malang</title>
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <div class="row col-12">
+      <div class="col-lg-10"></div>
+      <div class="col-lg-2">
+        <div class="row">
+          <div class="col-6 text-end mt-2">
+            <button type="button" class="btn btn-light">
+              <a href=".//Notifikasi/Notifikasi.html">
+                <i
+                  class="fa-regular fa-bell fa-xl me-3"
+                  style="color: #000000"
+                ></i
+              ></a>
+            </button>
+          </div>
+          <div class="col-6 text-start mt-2">
+            <div class="dropdown-center">
+              <button
+                class="btn btn-light dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i
+                  class="fa-regular fa-user fa-2xl me-3"
+                  style="color: #000000"
+                ></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-white">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href=".//profil_pengguna/profil_pengguna.html"
+                    >Profil</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href=".//Reservasi_dan_Daftar_Tunggu/reservasi_dan_daftar_tunggu.html"
+                    >Reservasi</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href=".//HIstory/History.html"
+                    >Histori</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href=".//Pertemanan/Pertemanan.html"
+                    >Pertemanan</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href=".//Dukungan/DukunganPengguna.html"
+                    >Dukungan</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    data-bs-toggle="modal"
+                    data-bs-target="#logout"
+                    href=".//belum_login/belum_login.html"
+                    >Logout</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Modal Start -->
+    <div
+      class="modal fade"
+      id="logout"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h4 class="text-center">Anda ingin logout?</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-6">
+                  <button
+                    type="button"
+                    class="btn btn-secondary col-12"
+                    data-bs-dismiss="modal"
+                  >
+                    Tidak
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button type="button" class="btn btn-primary col-12">
+                    <a
+                      class="link-offset-2 link-underline link-underline-opacity-0 col-12"
+                      style="color: white"
+                      href=".//belum_login/belum_login.html"
+                      >Ya</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal End -->
+
+    <!-- Logo Start -->
+    <div class="container-md text-center">
+      <div
+        class="row col-lg-6 col-sm-10 col-md-9 p-4 col-9 border border-black mt-5 mb-3 ms-5 p-lg-4 bg-white bg-opacity-75"
+      >
+        <div
+          class="col-3 col-sm-4 col-md-3 me-md-4 col-lg-3 mx-md-auto mx-lg-auto mx-auto text-center"
+        >
+          <img
+            src=".\\image\an-icon-for-library_SBa9Q7Aq_upscaled-removebg-preview.png"
+            class="icon-header"
+          />
+        </div>
+        <div
+          id="logo"
+          class="col-lg-8 ms-lg-1 col-md-8 col-8 border border-black ms-lg-3 mb-lg-1"
+        >
+          <p class="text-center">Perpustakaan Kota <br />Malang</p>
+        </div>
+      </div>
+    </div>
+    <!-- Logo End -->
+
+    <!-- Searching Start -->
+    <div class="container-md text-center">
+      <div class="row align-items-center mt-lg-5 me-lg-2">
+        <div class="col-4">
+          <a href=".//daftar_buku/daftar_buku.html">
+            <button type="button" class="btn btn-primary">
+              Lihat semua daftar buku
+            </button>
+          </a>
+        </div>
+        <div class="col-4">
+          <nav class="navbar">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2 col-4"
+                  type="search"
+                  placeholder="Cari Buku.."
+                  aria-label="Search"
+                  style="border-color: black"
+                />
+                <button
+                  class="btn btn-outline-success"
+                  style="border-color: black; background-color: white"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+          </nav>
+        </div>
+        <div class="col-4"></div>
+      </div>
+    </div>
+    <!-- Searching End -->
+
+    <!-- Card Start -->
+    <div class="container-md text-center">
+      <div
+        class="row align-items-center mt-4 me-1 ms-1 border border-black bg-white bg-opacity-75"
+      >
+        <div id="bufav" class="col-12">Buku Favorit</div>
+        <div class="col-lg-6">
+          <div
+            class="clearfix border border-black mt-3 mb-lg-5 bg-body-tertiary"
+          >
+            <img
+              src=".//image/jjk.jpg"
+              class="col-md-4 float-md-end ms-md-1 img-fluid img-thubnail"
+              alt="..."
+            />
+            <p id="judul">Jujutsu Kaisen</p>
+            <p id="ket" class="text-start ms-2">
+              Yuji Itadori seorang murid SMA dengan kemampuan atletik yang luar
+              biasa. Suatu hari, segel "objek terkutuk" yang berada di
+              sekolahnya terlepas, monster-monster pun mulai bermunculan. Yuji
+              menyusup ke dalam gedung sekolah demi menolong senior di klubnya,
+              akan tetapi...
+            </p>
+            <a href=".//daftar_buku/daftar_buku.html">
+              <button type="button" class="btn btn-primary mt-5 mb-5">
+                Lihat buku
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="clearfix border border-black mt-3 bg-body-tertiary mb-5">
+            <img
+              src=".//image/dilan.jpg"
+              class="col-md-4 float-md-end ms-md-1 img-fluid"
+              alt="..."
+            />
+            <p id="judul">Dilan 1990</p>
+            <p id="ket" class="text-start ms-2">
+              Menceritakan kilas balik Milea pada tahun 1990. Pada tahun
+              tersebut, Milea hanyalah remaja SMA pindahan dari Jakarta ke
+              Bandung. Milea memiliki kehidupan layaknya anak SMA. Semuanya
+              berubah ketika seorang remaja pria bernama Dilan mengajaknya
+              berkenalan di suatu siang pada saat jam pulang sekolah. Kisah ...
+            </p>
+            
+           <a href=".//daftar_buku/daftar_buku.html">
+              <button type="button" class="btn btn-primary mt-5 mb-5">
+                Lihat buku
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card End -->
+
+    <!-- Backgroud Image Start -->
+    <div class="background-image"></div>
+    <!-- Backgroud Image End -->
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+  </body>
+</html>
